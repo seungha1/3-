@@ -1,5 +1,8 @@
 class beverage:
     menu = {'커피':3000, '녹차':2500, '아이스티':3000}
+    def __init__(self,name,quantity):
+        self.name = name
+        self.quantity = quantity
     def calculate(name,quantity):
        if name in beverage.menu:
            return beverage.menu[name]*quantity

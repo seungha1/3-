@@ -1,17 +1,19 @@
-import random
-result = []
+class Bun:
+    def __init__(self, name, prices):
+        self.contents = name
+        self.price = prices
+        self.total = 0
 
-for i in range(6)
-    nan_num = random.randint(1.46)
-    result.append(ran_num)
+    def sell(self):
+        self.total += self.price
+        print(self.contents + "붕어빵이 판매되었습니다.")
 
-result.sort()
-print(result)
+cream_bun = Bun("슈크림", 1000)
 
-number = [1,2,3,4]
-if 5 in number:
-    print("중복이 있습니다")
-else:
-    number.append(5)
-    print("중복이 없습니다")
-    ####while 조건문을 어떻게 만들것인지 고민:
+cream_bun.sell()
+cream_bun.sell()
+cream_bun.sell()
+cream_bun.sell()
+print(cream_bun.total)
+
+
